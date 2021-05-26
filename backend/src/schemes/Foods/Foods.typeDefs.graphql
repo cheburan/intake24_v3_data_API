@@ -3,6 +3,17 @@ type FoodsByLocaleCount {
 	count: String!
 }
 
+type FoodsWithCategories {
+  code: String!
+  description: String!
+  local_description: String
+  locale_id: String
+  category_code: String
+  is_hidden: Boolean
+  nutrient_table_id: String!
+}
+
 type Query {
   getFoodsByLocale(locale:String!): FoodsByLocaleCount!
+	getFoodsAndGategories(locale: String!, nutrientTable: String!): [FoodsWithCategories]
 }
