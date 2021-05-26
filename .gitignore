@@ -1,0 +1,13 @@
+# Env Variables
+.env
+
+# App Configs
+app.json
+
+# Node Modules
+node_modules
+
+# DS_Store
+.DS_Store
+*.iml
+.idea

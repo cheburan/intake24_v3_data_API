@@ -1,0 +1,8 @@
+type FoodsByLocaleCount {
+	locale: String!
+	count: String!
+}
+
+type Query {
+  getFoodsByLocale(locale:String!): FoodsByLocaleCount!
+}
